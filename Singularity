@@ -15,19 +15,24 @@ From: singularityhub/ubuntu:latest
 
     # Installing tensorflow
     /usr/local/miniconda3/bin/conda install -y -c conda-forge tensorflow
-    
+
     # Installing tensorboardX
     /usr/local/miniconda3/bin/pip install tensorboardX
-    
-    # Installing PyTorch 
+
+    # Installing shapely
+    /usr/local/miniconda3/bin/conda install -y shapely
+
+    git clone https://github.com/pybox2d/pybox2d
+    cd pybox2d
+    /usr/local/miniconda3/bin/python setup.py build
+    /usr/local/miniconda3/bin/python setup.py install
+
+    # Installing PyTorch
     /usr/local/miniconda3/bin/conda install -y pytorch-cpu torchvision-cpu -c pytorch
 
     # Installing Seaborn
     /usr/local/miniconda3/bin/conda install -y -c conda-forge matplotlib
     /usr/local/miniconda3/bin/conda install -y seaborn
-    
-    # Installing shapely
-    /usr/local/miniconda3/bin/conda install -y shapely
 
     cd /home
     git clone https://github.com/openai/baselines.git
@@ -35,7 +40,23 @@ From: singularityhub/ubuntu:latest
     git reset --hard 8e56dd
     /usr/local/miniconda3/bin/pip install -e .
 
-    git clone https://github.com/pybox2d/pybox2d
-    cd pybox2d
-    /usr/local/miniconda3/bin/python setup.py build
+    # Installing Pygame
+    /usr/local/miniconda3/bin/pip install pygame
+
+    # Installing PLE
+    cd /home
+    git clone https://github.com/ntasfi/PyGame-Learning-Environment
+    cd PyGame-Learning-Environment
+    /usr/local/miniconda3/bin/pip install -e .
+
+    # Installing MinAtar
+    cd /home
+    git clone https://github.com/kenjyoung/MinAtar.git
+    cd MinAtar
     /usr/local/miniconda3/bin/python setup.py install
+
+    # Installing Sweeper
+    cd /home
+    git clone https://github.com/umichyiwan/sweeper.git
+    cd sweeper
+    /usr/local/miniconda3/bin/pip install -e .
