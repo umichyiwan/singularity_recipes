@@ -1,5 +1,5 @@
-Bootstrap: shub
-From: singularityhub/ubuntu:latest
+Bootstrap: docker
+From: ubuntu:16.04
 
 %environment
     export PATH="/usr/local/miniconda3/bin:$PATH"
@@ -55,8 +55,8 @@ From: singularityhub/ubuntu:latest
     cd MinAtar
     /usr/local/miniconda3/bin/python setup.py install
 
-    # Installing Sweeper
+    # Installing Experimenter
     cd /home
-    git clone https://github.com/umichyiwan/sweeper.git
-    cd sweeper
+    git clone https://github.com/umichyiwan/experimenter.git
+    cd experimenter
     /usr/local/miniconda3/bin/pip install -e .
