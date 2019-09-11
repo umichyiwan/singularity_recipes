@@ -60,4 +60,3 @@ From: ubuntu:16.04
     git clone https://github.com/umichyiwan/experimenter.git
     cd experimenter
     /usr/local/miniconda3/bin/pip install -e .
-
