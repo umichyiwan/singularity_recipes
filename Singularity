@@ -55,8 +55,8 @@ From: ubuntu:16.04
     cd MinAtar
     /usr/local/miniconda3/bin/python setup.py install
 
-    # Installing Experimenter
+    # Installing AlphaEx
     cd /home
-    git clone https://github.com/umichyiwan/experimenter.git
-    cd experimenter
+    git clone https://github.com/yiwan-rl/AlphaEx
+    cd AlphaEx 
     /usr/local/miniconda3/bin/pip install -e .
