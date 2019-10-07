@@ -55,7 +55,7 @@ From: ubuntu:16.04
     cd MinAtar
     /usr/local/miniconda3/bin/python setup.py install
 
-    # Installing AlphaEx
+    # Installing AlphaEx 
     cd /home
     git clone https://github.com/yiwan-rl/AlphaEx
     cd AlphaEx 
