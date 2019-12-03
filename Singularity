@@ -60,3 +60,4 @@ From: ubuntu:16.04
     git clone https://github.com/yiwan-rl/AlphaEx
     cd AlphaEx 
     /usr/local/miniconda3/bin/pip install -e .
+
