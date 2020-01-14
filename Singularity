@@ -55,9 +55,15 @@ From: ubuntu:16.04
     cd MinAtar
     /usr/local/miniconda3/bin/python setup.py install
 
+    # Install gym_pygame
+    cd /home
+    git clone https://github.com/qlan3/gym-games.git
+    cd gym-games
+    /usr/local/miniconda3/bin/pip install -e .
+
     # Installing AlphaEx 
     cd /home
-    git clone https://github.com/yiwan-rl/AlphaEx
+    git clone https://github.com/AmiiThinks/AlphaEx.git
     cd AlphaEx 
     /usr/local/miniconda3/bin/pip install -e .
 
