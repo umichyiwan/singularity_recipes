@@ -6,7 +6,7 @@ From: ubuntu:16.04
 
 %post
     apt-get -y update
-    apt-get -y install wget bzip2 parallel git libopenmpi-dev libsm6 libxrender-dev build-essential python-dev swig python-pygame python-setuptools
+    apt-get -y install wget bzip2 parallel git libopenmpi-dev libsm6 libxrender-dev build-essential pythoni3.7-dev swig python-pygame python-setuptools
 
     # Installing miniconda
     wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
