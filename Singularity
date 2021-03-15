@@ -66,3 +66,4 @@ From: ubuntu:16.04
     cd AlphaEx 
     /usr/local/miniconda3/bin/pip install -e .
 
+
