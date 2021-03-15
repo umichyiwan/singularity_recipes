@@ -6,12 +6,11 @@ From: ubuntu:16.04
 
 %post
     apt-get -y update
-    apt-get -y install wget bzip2 parallel git libopenmpi-dev libsm6 libxrender-dev build-essential python3.7-dev swig python-pygame python-setuptools
+    apt-get -y install wget bzip2 parallel git libopenmpi-dev libsm6 libxrender-dev build-essential python-dev swig python-pygame python-setuptools
 
     # Installing miniconda
-    wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
-    bash Miniconda3-latest-Linux-x86_64.sh -b -p /usr/local/miniconda3
-    rm Miniconda3-latest-Linux-x86_64.sh
+    wget https://repo.continuum.io/miniconda/Miniconda3-py37_4.9.2-Linux-x86_64.sh
+    bash Miniconda3-py37_4.9.2-Linux-x86_64.sh -b -p /usr/local/miniconda3
 
     # Installing tensorflow
     /usr/local/miniconda3/bin/conda install -y -c conda-forge tensorflow
@@ -28,7 +27,7 @@ From: ubuntu:16.04
     /usr/local/miniconda3/bin/python setup.py install
 
     # Installing PyTorch
-    /usr/local/miniconda3/bin/conda install -y pytorch-cpu torchvision-cpu -c pytorch
+    /usr/local/miniconda3/bin/conda install pytorch-cpu==1.1.0 torchvision-cpu==0.3.0 cpuonly -c pytorch
 
     # Installing Seaborn
     /usr/local/miniconda3/bin/conda install -y -c conda-forge matplotlib
